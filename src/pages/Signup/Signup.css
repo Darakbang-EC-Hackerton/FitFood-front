@@ -1,0 +1,90 @@
+/* src/pages/Signup/Signup.css */
+.start-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: greenyellow;
+  }
+    .start-logo img {
+    height: 40px;
+    cursor: pointer;
+  }
+.signup-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* 헤더 높이 제외 */
+    width: 100%;
+    background-color: #f0f0f0; /* 배경색 회색 */
+  }
+  
+  .signup-box {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .signup-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .signup-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .signup-field label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .signup-field input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .signup-button:hover {
+    background-color: #45a049;
+  }
+  
+  .login-link {
+    margin-top: 10px;
+    color: #007bff;
+  }
+  
+  .login-link a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
