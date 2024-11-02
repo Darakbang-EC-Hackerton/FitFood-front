@@ -1,15 +1,11 @@
 // src/pages/Signup/Signup.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../../components/Header';
 import './Signup.css';
 
 function Signup() {
   return (
-    <>
-    
     <div className="signup-page">
-      <div><Header /></div>
       <main className="signup-content">
         <div className="signup-box">
           <h2>회원가입</h2>
@@ -28,7 +24,6 @@ function Signup() {
         </div>
       </main>
     </div>
-    </>
   );
 }
 

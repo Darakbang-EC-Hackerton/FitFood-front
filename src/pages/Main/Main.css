@@ -1,47 +1,143 @@
-/* src/pages/Main/Main.css */
+ 
+  /* src/pages/Main.css */
 
-.main-grid {
-    display: grid;
-    grid-template-areas:
-      "header header header"
-      "sidebar-left content sidebar-right"
-      "footer footer footer";
-    grid-template-columns: 1fr 3fr 1fr; /* 좌측, 중간, 우측 비율 */
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-  }
-  
-  .header {
-    grid-area: header;
-    background-color: #4CAF50;
-    padding: 10px;
-    color: white;
-    text-align: center;
-  }
-  
-  .sidebar-left {
-    grid-area: sidebar-left;
-    background-color: #f4f4f4;
-    padding: 10px;
-  }
-  
-  .content {
-    grid-area: content;
-    background-color: #fff;
-    padding: 10px;
-  }
-  
-  .sidebar-right {
-    grid-area: sidebar-right;
-    background-color: #f4f4f4;
-    padding: 10px;
-  }
-  
-  .footer {
-    grid-area: footer;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
-  
+.main-container {
+  min-height: 100vh;
+  background-color: grey;
+  color: black;
+  padding: 1rem;
+}
+
+.header2 {
+  margin-bottom: 1.5rem;
+  background-color: #4E788A;
+  padding: 0.5rem;
+  border-radius: 0.37rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 0.875rem;
+}
+
+.suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.suggestion-card {
+  background-color: lightgray;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.suggestion-value {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: bold;
+}
+
+.suggestion-label {
+  font-size: 0.75rem; /* text-xs */
+}
+
+.meal-suggestions {
+  background-color: #A8D440;
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.meal-suggestions-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.meal-suggestions-description {
+  font-size: 0.875rem; /* text-sm */
+  margin-bottom: 1rem;
+}
+
+.meal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.meal-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: #9DC93C;
+  border-radius: 0.375rem; /* rounded */
+  cursor: pointer;
+}
+
+.meal-time {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: medium;
+}
+
+.meal-items {
+  font-size: 0.75rem; /* text-xs */
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.save-button {
+  background-color: #2E7D32;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px; /* rounded-full */
+  font-size: 0.875rem; /* text-sm */
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.progress {
+  margin-bottom: 1rem;
+}
+
+.progress-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.progress-description {
+  font-size: 0.75rem; /* text-xs */
+}
+
+.calories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.calorie-card {
+  background-color: #9DC93C;
+  padding: 0.5rem;
+  border-radius: 0.375rem; /* rounded */
+  text-align: center;
+}
+
+.calorie-value {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: bold;
+}
+
+.calorie-label {
+  font-size: 0.75rem; /* text-xs */
+}

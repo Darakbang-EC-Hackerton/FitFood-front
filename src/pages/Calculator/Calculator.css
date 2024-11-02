@@ -1,0 +1,107 @@
+/* src/pages/Calculator.css */
+
+.calculator-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #6bcf68, #50b848, #4aa43d);
+  }
+  
+  .calculator-box {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calculator-title {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #2f855a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon {
+    margin-right: 0.5rem;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-label {
+    font-size: 1rem;
+    color: #2f855a;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #c6f6d5;
+    border-radius: 0.25rem;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border-color: #38a169;
+    box-shadow: 0 0 0 2px rgba(56, 161, 105, 0.4);
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #2f855a;
+  }
+  
+  .calculate-button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.125rem; /* text-lg */
+    font-weight: bold;
+    color: white;
+    background-color: #2f855a;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .calculate-button:hover {
+    background-color: #276749;
+  }
+  
+  .result-box {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #f0fff4;
+    border: 1px solid #c6f6d5;
+    border-radius: 0.25rem;
+  }
+  
+  .result-text {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #276749;
+  }
+  
+  .result-value {
+    font-size: 1.25rem;
+    color: #38a169;
+  }
+  

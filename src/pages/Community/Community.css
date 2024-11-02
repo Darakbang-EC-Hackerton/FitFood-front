@@ -1,0 +1,70 @@
+.community-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.top-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+}
+
+.tab {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab.active {
+  background-color: #E0F2FE;
+  font-weight: bold;
+}
+
+.controls .select {
+  width: 80px;
+}
+
+.write-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.posts-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header {
+  background-color: #F9FAFB;
+}
+
+.table-cell {
+  padding: 0.5rem;
+}
+
+.pinned {
+  background-color: #E0F2FE;
+}
+
+.notice {
+  color: #EF4444;
+}
+
+.title-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
