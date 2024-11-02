@@ -1,0 +1,48 @@
+/* 기본 버튼 스타일 */
+.button2 {
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  border-radius: 0.375rem; /* rounded-md */
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s, border-color 0.2s;
+  font-size: 1rem;
+}
+
+/* 포커스 상태 */
+.button2:focus {
+  outline: 2px solid rgba(20, 184, 166, 0.5); /* focus:ring */
+  outline-offset: 2px;
+}
+
+/* Variant: Outline */
+.button2-outline {
+  border: 1px solid #4ade80; /* border-green-500 */
+  background-color: white;
+  color: #4ade80; /* text-green-500 */
+}
+
+.button2-outline:hover {
+  background-color: #d1fae5; /* hover:bg-green-50 */
+}
+
+/* Variant: Secondary */
+.button2-secondary {
+  background-color: #4ade80; /* bg-green-500 */
+  color: white;
+  border: none;
+}
+
+.button2-secondary:hover {
+  background-color: #22c55e; /* hover:bg-green-600 */
+}
+
+/* Variant: Ghost */
+.button2-ghost {
+  background-color: transparent;
+  color: #4ade80; /* text-green-600 */
+  border: none;
+}
+
+.button2-ghost:hover {
+  background-color: #f0fdfa; /* hover:bg-green-100 */
+}

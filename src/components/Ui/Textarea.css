@@ -1,0 +1,17 @@
+/* 기본 텍스트 영역 스타일 */
+.textarea {
+  border: 1px solid #e5e7eb; /* 기본 회색 테두리 */
+  border-radius: 0.375rem; /* 둥근 모서리 */
+  padding: 0.5rem; /* 내부 여백 */
+  resize: none; /* 크기 조정 비활성화 */
+  transition: border-color 0.2s ease, outline 0.2s ease; /* 전환 효과 */
+  font-size: 1rem;
+  width: 100%; /* 기본 너비를 100%로 설정 */
+}
+
+/* 포커스 상태 */
+.textarea:focus {
+  border-color: #34d399; /* focus:border-green-500 */
+  outline: 2px solid rgba(20, 184, 166, 0.5); /* 초록색 테두리 */
+  outline-offset: 2px; /* 테두리와 경계 간격 */
+}
