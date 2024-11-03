@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { ChevronRight } from 'lucide-react';
 import './Main.css';
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 export default function Main() {
   const navigate = useNavigate();
@@ -13,12 +14,15 @@ export default function Main() {
 
   const [currentDate] = useState(new Date());
 
-  const meals = [
-    { time: 'Morning', items: 'Crunchy Granola, Banana Smoothie' },
-    { time: 'Lunch', items: 'Chicken Salad, Iced Tea' },
-    { time: 'Evening', items: 'Mixed Pasta, Red Wine' },
-    { time: 'Snacks', items: 'Almonds, Green Tea' },
+  const selectedFoods = [
+    { name: "사과", calories: 52, amount: 100 },
+    { name: "바나나", calories: 89, amount: 150 },
   ];
+
+  // Redux에서 selectedFoods 가져오기
+  // const selectedFoods = useSelector((state) => state.food.selectedFoods);
+  console.log("Selected Foods:", selectedFoods);
+
 
   return (
     <div className="main-container">
@@ -38,20 +42,29 @@ export default function Main() {
       <section className="meal-suggestions">
         <h2 className="meal-suggestions-title">식사기록</h2>
         <p className="meal-suggestions-description">
-          각 식사의 기록을 보여주마
+          식사를 기록해주마
         </p>
 
         <div className="meal-list">
-          {meals.map((meal, index) => (
+          {selectedFoods.map((food, index) => (
             <button key={index} className="meal-item" onClick={handleMealClick}>
               <div>
-                <p className="meal-time">{currentDate.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })} {meal.time}:</p>
-                <p className="meal-items">{meal.items}</p>
+                <p className="meal-time">
+                  {currentDate.toLocaleDateString('en-US', {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                  })}
+                  {` - ${food.name}`}
+                </p>
+                <p className="meal-items">{`${food.amount}g (${Math.round((food.calories * food.amount) / 100)} kcal)`}</p>
               </div>
               <ChevronRight className="icon" />
             </button>
           ))}
         </div>
+        
 
         <button className="save-button">Start saving</button>
 
